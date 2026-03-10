@@ -1,0 +1,45 @@
+# Core dependencies
+langchain
+langchain-community
+langchain-text-splitters
+langchain-core
+langchain-huggingface
+
+# Vector database
+faiss-cpu
+
+# Embeddings
+sentence-transformers
+
+# Document processing
+pypdf
+pdfplumber
+
+# Stage 2: Table extraction (Camelot requires Ghostscript system binary)
+# Install Ghostscript first: https://www.ghostscript.com/releases/
+camelot-py[cv]
+opencv-python-headless
+
+# Stage 1: OCR for scanned pages (Tesseract system binary required)
+# Install Tesseract first: https://github.com/UB-Mannheim/tesseract/wiki
+pytesseract
+Pillow
+
+# Structured data (CSV / Excel ingestion)
+pandas
+openpyxl
+
+# LLM
+groq==0.9.0
+
+# API Backend
+fastapi
+uvicorn[standard]
+python-multipart
+
+# Utilities
+python-dotenv
+pydantic
+httpx>=0.27.0
+
+numpy<2
